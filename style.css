@@ -194,6 +194,7 @@ header ul.is-sticky li a.active {
 }
 
 
+/* On Index.HTML */
 #hero {
   background: url("Images/Rack-Image.jpeg") center
     center no-repeat;
@@ -793,9 +794,6 @@ footer small a:hover {
     width: 400px;
   }
 
-  #agents .card {
-    width: 49%;
-  }
 
   #the-best .flex > img {
     display: none;
@@ -1054,95 +1052,121 @@ h1 {
   transform: rotate(-224deg);
 }
 
+/* End Of FAQ */
+
+/* faq.html */
 
 
-/* CSS for the property search section */
-#property-search {
-  background-color: #f5f5f5;
-  padding: 20px;
-  margin-bottom: 20px;
+/* Collection Starts */
+
+
+/* On Index.HTML */
+#collection {
+  background: url("Images/collection-image.jpeg") center
+    center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 75%;
+  width: 100%;
 }
 
-#property-search h2 {
-  margin-bottom: 10px;
-  font-size: 24px;
+#collection .fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(52, 58, 64, 0.9);
+  z-index: 1;
 }
 
-#property-search-form {
-  display: flex;
-  align-items: center;
+#collection .collection-text {
+  position: absolute;
+  top: 50%;
+  margin: -75px auto 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  color: #fff;
+  width: 500px;
+  text-align: center;
 }
 
-#property-search-form label {
-  margin-right: 10px;
+#collection .collection-text p {
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 1rem;
 }
 
-#property-search-form select {
-  margin-right: 10px;
-  padding: 5px;
-}
+/* End OF Collection */
 
-#property-search-form input[type="submit"] {
-  padding: 8px 16px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-#property-search-form input[type="submit"]:hover {
-  background-color: #45a049;
-}
-
-#property-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.property {
-  width: calc(33.33% - 20px);
-  margin-bottom: 20px;
-  padding: 10px;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.property h2 {
-  margin: 0;
-  font-size: 18px;
-}
-
-.property p {
-  margin-top: 5px;
-  font-size: 14px;
-}
-
-.image-container {
+/* start: products styles */
+#products {
+  margin: 4rem 0 8rem;
   position: relative;
 }
 
-.image-container img {
-  width: 100%;
-  height: auto;
+#products  h2 {
+  margin-bottom: 3rem;
+  font-weight: bold;
 }
 
-.image-nav {
+#products .container {
+  position: relative;
+}
+
+#products .container:before {
+  content: "/";
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 80px;
+  top: 18px;
+  color: #999;
 }
 
-.image-nav button {
-  padding: 5px 10px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  cursor: pointer;
+#products-slider a.slick-arrow {
+  color: #000;
+  position: absolute;
+  top: -78px;
+  right: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
 }
 
-.image-nav button:hover {
-  background-color: #000000;
+#products-slider a.slick-prev {
+  right: 80px;
+}
+
+#products-slider .slick-slide {
+  padding: 0 15px;
+}
+
+#products-slider img {
+  width: 100%;
+  display: block;
+}
+
+#products-slider .property-details {
+  padding: 1rem;
+}
+
+#products-slider .price {
+  font-size: 1.2rem;
+  color: #343a40;
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+}
+
+#products-slider .property-details span {
+  font-size: 0.8rem;
+  padding-right: 15px;
+}
+
+#properties button.rounded {
+  display: block;
+  margin: 2rem auto 0;
+  width: 350px;
 }
